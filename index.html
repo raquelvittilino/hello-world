@@ -1,18 +1,95 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#5b1a2b" />
+  <title>Borgonha & Champagne · 5–11 out</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Roteiro de viagem · França</p>
+      <h1 class="hero__title">Borgonha <span>&amp;</span> Champagne</h1>
+      <p class="hero__dates">5 a 11 de outubro de 2026 · 7 dias</p>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="countdown__cell"><b id="cd-days">–</b><span>dias</span></div>
+        <div class="countdown__cell"><b id="cd-hours">–</b><span>horas</span></div>
+        <div class="countdown__cell"><b id="cd-mins">–</b><span>min</span></div>
+      </div>
+    </div>
+    <div class="hero__glass" aria-hidden="true"></div>
+  </header>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <nav class="tabs" id="tabs">
+    <button class="tab is-active" data-tab="roteiro">Roteiro</button>
+    <button class="tab" data-tab="vinhos">Diário de vinhos</button>
+    <button class="tab" data-tab="frases">Frases em francês</button>
+  </nav>
 
+  <main>
+    <!-- ================= ROTEIRO ================= -->
+    <section class="panel is-active" id="tab-roteiro">
+      <p class="panel__intro">
+        Saída e retorno por <strong>Paris</strong>. Borgonha primeiro (Dijon &amp; Beaune) pelas
+        Côtes de Nuits e de Beaune, depois subida à Champagne (Reims &amp; Épernay).
+        <span class="hint">Dica: em outubro, no auge do outono e logo após a vindima, reserve as visitas às maisons e domaines com antecedência — muitas só recebem com hora marcada.</span>
+      </p>
+      <div class="days" id="days"></div>
+    </section>
+
+    <!-- ================= VINHOS ================= -->
+    <section class="panel" id="tab-vinhos">
+      <p class="panel__intro">Registre cada degustação. Fica salvo só neste navegador (nada vai para a internet).</p>
+
+      <form class="wineform" id="wineform" autocomplete="off">
+        <div class="wineform__grid">
+          <label>Vinho / cuvée<input type="text" id="w-name" placeholder="ex.: Gevrey-Chambertin 1er Cru" required></label>
+          <label>Produtor / maison<input type="text" id="w-maker" placeholder="ex.: Domaine Trapet"></label>
+          <label>Safra<input type="text" id="w-year" placeholder="ex.: 2019" inputmode="numeric"></label>
+          <label>Região
+            <select id="w-region">
+              <option>Champagne</option>
+              <option>Côte de Nuits</option>
+              <option>Côte de Beaune</option>
+              <option>Chablis</option>
+              <option>Outra</option>
+            </select>
+          </label>
+        </div>
+        <div class="rating" role="group" aria-label="Nota">
+          <span class="rating__label">Nota:</span>
+          <div class="stars" id="w-stars">
+            <button type="button" data-v="1" aria-label="1 estrela">★</button>
+            <button type="button" data-v="2" aria-label="2 estrelas">★</button>
+            <button type="button" data-v="3" aria-label="3 estrelas">★</button>
+            <button type="button" data-v="4" aria-label="4 estrelas">★</button>
+            <button type="button" data-v="5" aria-label="5 estrelas">★</button>
+          </div>
+        </div>
+        <label class="wineform__notes">Notas de degustação
+          <textarea id="w-notes" rows="2" placeholder="aromas, corpo, com o que harmonizou…"></textarea>
+        </label>
+        <button type="submit" class="btn">Adicionar ao diário</button>
+      </form>
+
+      <div class="winecount" id="winecount"></div>
+      <ul class="winelist" id="winelist"></ul>
+    </section>
+
+    <!-- ================= FRASES ================= -->
+    <section class="panel" id="tab-frases">
+      <p class="panel__intro">O essencial para se virar em restaurantes e vinícolas. Toque em uma frase para ouvir a pronúncia aproximada.</p>
+      <div class="phrases" id="phrases"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Santé! 🥂 · Feito para a viagem de 5–11 out</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
