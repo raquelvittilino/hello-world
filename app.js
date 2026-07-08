@@ -9,6 +9,7 @@ const TRIP_MONTH = 9;           // outubro
 const TRIP_MONTH_LABEL = "out"; // rótulo curto exibido nas datas
 const TRIP_START_DAY = 5;       // saída de Paris → Borgonha
 const HOTEL_BORGONHA = "https://maps.app.goo.gl/Koe4asrhXTtxscNJ9?g_st=ic";
+const HOTEL_CHAMPAGNE = "https://www.google.com/maps/search/?api=1&query=Domaine%20Les%20Crayeres%2064%20Bd%20Henry%20Vasnier%2051100%20Reims";
 
 /* ---------- Roteiro dia a dia ---------- */
 // Borgonha (5→8) e depois Champagne (8→11), retorno a Paris no dia 11.
@@ -51,11 +52,11 @@ const ITINERARY = [
     title: "Borgonha → Champagne (Reims)",
     items: [
       "Transferência da Borgonha para a Champagne (~3h de carro; ou trem via Paris).",
-      "Check-in no hotel da Champagne. <em>(hotel a definir)</em>",
+      `Check-in no <strong>Domaine Les Crayères</strong>, castelo 5★ em Reims. <a href="${HOTEL_CHAMPAGNE}" target="_blank" rel="noopener">📍 Ver no mapa</a>`,
       "Catedral de Reims (UNESCO), onde os reis franceses eram coroados.",
       "Primeira taça de champagne na Place Drouet d'Erlon. 🥂",
     ],
-    note: "Hotel de Champagne ainda não reservado — sugestões em Reims ou Épernay.",
+    note: "Domaine Les Crayères — Relais & Châteaux num parque de 7 hectares, com restaurante estrelado Michelin. 64 Bd Henry Vasnier, 51100 Reims.",
   },
   {
     n: 5, date: "9", region: "champagne", tag: "Champagne",
