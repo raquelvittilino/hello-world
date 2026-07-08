@@ -55,6 +55,56 @@
       <article class="mapcard">
         <h2 class="mapcard__title">Borgonha <span>· Bourgogne</span></h2>
         <p class="mapcard__sub">Uma faixa estreita de vinhas de ~150 km. Praticamente monovarietal: <strong>Pinot Noir</strong> nos tintos, <strong>Chardonnay</strong> nos brancos. O que muda tudo é o <em>terroir</em> — cada vilarejo (e cada parcela, o <em>climat</em>) tem nome próprio.</p>
+
+        <svg class="artmap" viewBox="0 0 340 480" role="img" aria-label="Mapa estilizado da Borgonha: de Dijon ao sul, pela Côte de Nuits e Côte de Beaune, com Chablis a noroeste">
+          <defs>
+            <linearGradient id="b-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6efdb"/><stop offset="1" stop-color="#ecdfc2"/>
+            </linearGradient>
+            <pattern id="b-vines" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#5a1622" stroke-width="1" stroke-opacity="0.28"/>
+            </pattern>
+            <linearGradient id="b-beaune" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8a2436"/><stop offset="0.55" stop-color="#a85a3f"/><stop offset="1" stop-color="#c69a2e"/>
+            </linearGradient>
+          </defs>
+          <rect width="340" height="480" fill="url(#b-bg)"/>
+          <path d="M210,0 H340 V480 H196 C214,340 220,180 210,0 Z" fill="#e7e6c9" opacity="0.55"/>
+          <path d="M0,0 H128 C104,110 98,150 112,205 C96,300 84,360 74,480 H0 Z" fill="#e0d4b2" opacity="0.6"/>
+          <path d="M150,46 C138,92 140,152 150,206 C170,210 192,208 206,204 C212,150 210,94 198,50 C182,42 165,42 150,46 Z" fill="#8a2436"/>
+          <path d="M150,46 C138,92 140,152 150,206 C170,210 192,208 206,204 C212,150 210,94 198,50 C182,42 165,42 150,46 Z" fill="url(#b-vines)"/>
+          <path d="M150,214 C138,272 128,344 120,424 C150,430 178,428 196,424 C205,344 210,272 205,214 C186,209 168,210 150,214 Z" fill="url(#b-beaune)"/>
+          <path d="M150,214 C138,272 128,344 120,424 C150,430 178,428 196,424 C205,344 210,272 205,214 C186,209 168,210 150,214 Z" fill="url(#b-vines)"/>
+          <path d="M178,58 C168,120 168,175 176,206 C168,290 152,360 142,416" fill="none" stroke="#b8860b" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+          <text class="zone" x="214" y="122" transform="rotate(90 214 122)">CÔTE DE NUITS</text>
+          <text class="zone" x="214" y="322" transform="rotate(90 214 322)">CÔTE DE BEAUNE</text>
+          <g class="vlg">
+            <circle cx="170" cy="74" r="2.6"/><text class="lbl" x="176" y="77">Gevrey-Chambertin</text>
+            <circle cx="166" cy="110" r="2.6"/><text class="lbl" x="172" y="113">Chambolle-Musigny</text>
+            <circle cx="172" cy="134" r="2.6"/><text class="lbl" x="178" y="137">Clos de Vougeot</text>
+            <circle cx="168" cy="162" r="2.6"/><text class="lbl" x="174" y="165">Vosne-Romanée</text>
+            <circle cx="146" cy="292" r="2.6"/><text class="lbl" x="152" y="295">Pommard</text>
+            <circle cx="143" cy="314" r="2.6"/><text class="lbl" x="149" y="317">Volnay</text>
+            <circle cx="139" cy="352" r="2.6"/><text class="lbl" x="145" y="355">Meursault</text>
+            <circle cx="135" cy="392" r="2.6"/><text class="lbl" x="141" y="395">Puligny-Montrachet</text>
+          </g>
+          <g class="cty">
+            <rect x="204" y="24" width="7" height="7" rx="1.5"/><text class="city" x="215" y="31">Dijon</text>
+            <rect x="160" y="197" width="6.5" height="6.5" rx="1.5"/><text class="city" x="170" y="204">Nuits-St-Georges</text>
+            <rect x="146" y="255" width="7" height="7" rx="1.5"/><text class="city" x="157" y="262">Beaune</text>
+          </g>
+          <g>
+            <circle cx="46" cy="70" r="15" fill="#c69a2e"/>
+            <circle cx="46" cy="70" r="15" fill="url(#b-vines)"/>
+            <text class="city" x="46" y="96" text-anchor="middle">Chablis</text>
+            <text class="note" x="46" y="108" text-anchor="middle">Chardonnay · ↖ ~130 km</text>
+          </g>
+          <g transform="translate(305,44)">
+            <circle r="14" fill="#ffffff" opacity="0.6"/>
+            <path d="M0,-11 L4,3 L0,0 L-4,3 Z" fill="#8a2436"/>
+            <text class="compass" x="0" y="-15" text-anchor="middle">N</text>
+          </g>
+        </svg>
         <span class="compass">Norte ↑</span>
         <ol class="winemap">
           <li class="rgn rgn--chardo">
@@ -117,7 +167,6 @@
         </div>
 
         <div class="maplinks">
-          <a class="mbtn" href="https://www.google.com/search?q=wine+folly+mapa+borgonha&tbm=isch" target="_blank" rel="noopener">🍷 Mapa Wine Folly</a>
           <a class="mbtn" href="https://www.google.com/maps/search/?api=1&query=Route+des+Grands+Crus+Bourgogne" target="_blank" rel="noopener">🧭 Route des Grands Crus</a>
         </div>
       </article>
@@ -126,6 +175,49 @@
       <article class="mapcard">
         <h2 class="mapcard__title">Champagne</h2>
         <p class="mapcard__sub">Ao redor de <strong>Reims</strong> e <strong>Épernay</strong>. Três uvas se combinam: <strong>Pinot Noir</strong> (corpo), <strong>Pinot Meunier</strong> (fruta) e <strong>Chardonnay</strong> (finesse). Cada sub-região puxa para uma delas.</p>
+
+        <svg class="artmap" viewBox="0 0 340 480" role="img" aria-label="Mapa estilizado da Champagne: Reims e Épernay, com Montagne de Reims, Vallée de la Marne, Côte des Blancs e Côte des Bar">
+          <defs>
+            <linearGradient id="c-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6efdb"/><stop offset="1" stop-color="#ecdfc2"/>
+            </linearGradient>
+            <pattern id="c-vines" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2340" stroke-width="1" stroke-opacity="0.25"/>
+            </pattern>
+          </defs>
+          <rect width="340" height="480" fill="url(#c-bg)"/>
+          <ellipse cx="150" cy="150" rx="98" ry="62" fill="#dbe0bf" opacity="0.55"/>
+          <path d="M0,240 C70,226 110,252 150,246 C210,238 262,260 340,248" fill="none" stroke="#9db8c9" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+          <text class="note" x="256" y="270">la Marne</text>
+          <path d="M78,120 C70,150 90,180 150,184 C210,180 232,150 222,122 C190,104 110,104 78,120 Z" fill="#8a2436"/>
+          <path d="M78,120 C70,150 90,180 150,184 C210,180 232,150 222,122 C190,104 110,104 78,120 Z" fill="url(#c-vines)"/>
+          <path d="M60,210 C120,198 200,200 286,214 C287,230 287,232 286,236 C200,224 120,222 60,234 C58,226 58,218 60,210 Z" fill="#7d5ba6"/>
+          <path d="M60,210 C120,198 200,200 286,214 C287,230 287,232 286,236 C200,224 120,222 60,234 C58,226 58,218 60,210 Z" fill="url(#c-vines)"/>
+          <path d="M120,250 C112,290 112,320 118,340 C140,344 158,342 166,338 C170,300 168,272 160,250 C146,246 132,247 120,250 Z" fill="#c69a2e"/>
+          <path d="M120,250 C112,290 112,320 118,340 C140,344 158,342 166,338 C170,300 168,272 160,250 C146,246 132,247 120,250 Z" fill="url(#c-vines)"/>
+          <path d="M150,398 C146,418 148,432 152,440 C176,444 198,442 208,438 C210,420 206,406 200,396 C184,392 164,393 150,398 Z" fill="#8a2436"/>
+          <path d="M150,398 C146,418 148,432 152,440 C176,444 198,442 208,438 C210,420 206,406 200,396 C184,392 164,393 150,398 Z" fill="url(#c-vines)"/>
+          <text class="zone" x="150" y="152" text-anchor="middle">MONTAGNE DE REIMS</text>
+          <text class="zone" x="174" y="227" text-anchor="middle">VALLÉE DE LA MARNE</text>
+          <text class="zone" x="143" y="298" text-anchor="middle" transform="rotate(90 143 298)">CÔTE DES BLANCS</text>
+          <text class="note" x="150" y="464" text-anchor="middle">Côte des Bar (Aube) · ~100 km ↓</text>
+          <g class="vlg">
+            <circle cx="150" cy="126" r="2.6"/><text class="lbl" x="156" y="129">Verzenay</text>
+            <circle cx="120" cy="228" r="2.6"/><text class="lbl" x="114" y="224" text-anchor="end">Hautvillers</text>
+            <circle cx="176" cy="230" r="2.6"/><text class="lbl" x="182" y="233">Aÿ</text>
+            <circle cx="150" cy="300" r="2.6"/><text class="lbl" x="172" y="303">Avize</text>
+            <circle cx="146" cy="324" r="2.6"/><text class="lbl" x="168" y="327">Le Mesnil</text>
+          </g>
+          <g class="cty">
+            <rect x="144" y="52" width="8" height="8" rx="1.5"/><text class="city" x="156" y="60">Reims</text>
+            <rect x="112" y="212" width="7.5" height="7.5" rx="1.5"/><text class="city" x="108" y="210" text-anchor="end">Épernay</text>
+          </g>
+          <g transform="translate(305,44)">
+            <circle r="14" fill="#ffffff" opacity="0.6"/>
+            <path d="M0,-11 L4,3 L0,0 L-4,3 Z" fill="#8a2436"/>
+            <text class="compass" x="0" y="-15" text-anchor="middle">N</text>
+          </g>
+        </svg>
         <span class="compass">Norte ↑ · Reims</span>
         <ol class="winemap">
           <li class="rgn rgn--pinot rgn--route">
@@ -167,7 +259,6 @@
         <span class="compass">Sul ↓</span>
 
         <div class="maplinks">
-          <a class="mbtn" href="https://www.google.com/search?q=wine+folly+mapa+champagne&tbm=isch" target="_blank" rel="noopener">🥂 Mapa Wine Folly</a>
           <a class="mbtn" href="https://www.google.com/maps/search/?api=1&query=Montagne+de+Reims+route+touristique+du+champagne" target="_blank" rel="noopener">🧭 Rota do Champagne</a>
         </div>
       </article>
