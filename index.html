@@ -23,10 +23,11 @@
     <div class="hero__glass" aria-hidden="true"></div>
   </header>
 
-  <nav class="tabs" id="tabs">
-    <button class="tab is-active" data-tab="roteiro">Roteiro</button>
-    <button class="tab" data-tab="vinhos">Diário de vinhos</button>
-    <button class="tab" data-tab="frases">Frases em francês</button>
+  <nav class="tabs" id="tabs" aria-label="Seções">
+    <button class="tab is-active" data-tab="roteiro"><span class="tab__ico">🗓️</span><span class="tab__lbl">Roteiro</span></button>
+    <button class="tab" data-tab="mapas"><span class="tab__ico">🗺️</span><span class="tab__lbl">Mapas</span></button>
+    <button class="tab" data-tab="vinhos"><span class="tab__ico">🍷</span><span class="tab__lbl">Vinhos</span></button>
+    <button class="tab" data-tab="frases"><span class="tab__ico">💬</span><span class="tab__lbl">Frases</span></button>
   </nav>
 
   <main>
@@ -38,6 +39,138 @@
         <span class="hint">Dica: em outubro, no auge do outono e logo após a vindima, reserve as visitas às maisons e domaines com antecedência — muitas só recebem com hora marcada.</span>
       </p>
       <div class="days" id="days"></div>
+    </section>
+
+    <!-- ================= MAPAS ================= -->
+    <section class="panel" id="tab-mapas">
+      <p class="panel__intro">As duas regiões explicadas de cima (norte) para baixo (sul): cada sub-região, sua uva principal e os vilarejos. ⭐ marca os trechos da sua viagem.</p>
+
+      <div class="grapelegend" aria-label="Legenda de uvas">
+        <span class="gl gl--pinot">Pinot Noir</span>
+        <span class="gl gl--chardo">Chardonnay</span>
+        <span class="gl gl--meunier">Pinot Meunier</span>
+      </div>
+
+      <!-- ---------- BORGONHA ---------- -->
+      <article class="mapcard">
+        <h2 class="mapcard__title">Borgonha <span>· Bourgogne</span></h2>
+        <p class="mapcard__sub">Uma faixa estreita de vinhas de ~150 km. Praticamente monovarietal: <strong>Pinot Noir</strong> nos tintos, <strong>Chardonnay</strong> nos brancos. O que muda tudo é o <em>terroir</em> — cada vilarejo (e cada parcela, o <em>climat</em>) tem nome próprio.</p>
+        <span class="compass">Norte ↑</span>
+        <ol class="winemap">
+          <li class="rgn rgn--chardo">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Chablis</h4>
+              <span class="rgn__grape">Chardonnay</span>
+              <p class="rgn__note">Isolado a noroeste. Brancos minerais e cortantes.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--pinot rgn--route">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Côte de Nuits <span class="rgn__star" title="Na sua rota">⭐</span></h4>
+              <span class="rgn__grape">Pinot Noir</span>
+              <div class="rgn__villages">
+                <span>Gevrey-Chambertin</span><span>Chambolle-Musigny</span><span>Vougeot</span><span>Vosne-Romanée</span><span>Nuits-St-Georges</span>
+              </div>
+              <p class="rgn__note">Berço dos grandes tintos — os Grands Crus mais lendários.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--mixed rgn--route">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Côte de Beaune <span class="rgn__star" title="Na sua rota">⭐</span></h4>
+              <span class="rgn__grape">Pinot Noir + Chardonnay</span>
+              <div class="rgn__villages">
+                <span>Beaune</span><span>Pommard</span><span>Volnay</span><span>Meursault</span><span>Puligny-Montrachet</span>
+              </div>
+              <p class="rgn__note">Tintos elegantes e os brancos mais cultuados do mundo.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--mixed">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Côte Chalonnaise</h4>
+              <span class="rgn__grape">Pinot Noir + Chardonnay</span>
+              <div class="rgn__villages"><span>Mercurey</span><span>Rully</span><span>Givry</span></div>
+              <p class="rgn__note">Ótimo custo-benefício, menos turístico.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--chardo">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Mâconnais</h4>
+              <span class="rgn__grape">Chardonnay</span>
+              <div class="rgn__villages"><span>Pouilly-Fuissé</span><span>Mâcon</span></div>
+              <p class="rgn__note">Brancos generosos e solares, no sul da região.</p>
+            </div>
+          </li>
+        </ol>
+        <span class="compass">Sul ↓</span>
+
+        <div class="pyramid" aria-label="Pirâmide de qualidade da Borgonha">
+          <p class="pyramid__cap">Hierarquia dos rótulos (do topo raro à base):</p>
+          <div class="pyr pyr--gc"><b>Grand Cru</b> · ~1%</div>
+          <div class="pyr pyr--pc"><b>Premier Cru (1er)</b> · ~10%</div>
+          <div class="pyr pyr--vl"><b>Village</b> · ~37%</div>
+          <div class="pyr pyr--rg"><b>Bourgogne (regional)</b> · ~52%</div>
+        </div>
+
+        <div class="maplinks">
+          <a class="mbtn" href="https://www.google.com/search?q=wine+folly+mapa+borgonha&tbm=isch" target="_blank" rel="noopener">🍷 Mapa Wine Folly</a>
+          <a class="mbtn" href="https://www.google.com/maps/search/?api=1&query=Route+des+Grands+Crus+Bourgogne" target="_blank" rel="noopener">🧭 Route des Grands Crus</a>
+        </div>
+      </article>
+
+      <!-- ---------- CHAMPAGNE ---------- -->
+      <article class="mapcard">
+        <h2 class="mapcard__title">Champagne</h2>
+        <p class="mapcard__sub">Ao redor de <strong>Reims</strong> e <strong>Épernay</strong>. Três uvas se combinam: <strong>Pinot Noir</strong> (corpo), <strong>Pinot Meunier</strong> (fruta) e <strong>Chardonnay</strong> (finesse). Cada sub-região puxa para uma delas.</p>
+        <span class="compass">Norte ↑ · Reims</span>
+        <ol class="winemap">
+          <li class="rgn rgn--pinot rgn--route">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Montagne de Reims <span class="rgn__star" title="Sua base">⭐</span></h4>
+              <span class="rgn__grape">Pinot Noir</span>
+              <div class="rgn__villages"><span>Reims</span><span>Verzenay</span><span>Aÿ</span></div>
+              <p class="rgn__note">Sua base (hotel em Reims). Champagnes estruturados e potentes.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--meunier rgn--route">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Vallée de la Marne <span class="rgn__star" title="Bate-volta">⭐</span></h4>
+              <span class="rgn__grape">Pinot Meunier</span>
+              <div class="rgn__villages"><span>Épernay</span><span>Hautvillers</span></div>
+              <p class="rgn__note">Avenue de Champagne e a abadia de Dom Pérignon. Frutados e macios.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--chardo rgn--route">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Côte des Blancs <span class="rgn__star" title="Bate-volta">⭐</span></h4>
+              <span class="rgn__grape">Chardonnay</span>
+              <div class="rgn__villages"><span>Avize</span><span>Cramant</span><span>Le Mesnil-sur-Oger</span></div>
+              <p class="rgn__note">Ao sul de Épernay. Berço dos <em>blanc de blancs</em>, elegantes e cítricos.</p>
+            </div>
+          </li>
+          <li class="rgn rgn--pinot">
+            <span class="rgn__dot"></span>
+            <div class="rgn__body">
+              <h4 class="rgn__name">Côte des Bar (Aube)</h4>
+              <span class="rgn__grape">Pinot Noir</span>
+              <p class="rgn__note">Bem ao sul, mais perto de Chablis. Produtores artesanais em alta.</p>
+            </div>
+          </li>
+        </ol>
+        <span class="compass">Sul ↓</span>
+
+        <div class="maplinks">
+          <a class="mbtn" href="https://www.google.com/search?q=wine+folly+mapa+champagne&tbm=isch" target="_blank" rel="noopener">🥂 Mapa Wine Folly</a>
+          <a class="mbtn" href="https://www.google.com/maps/search/?api=1&query=Montagne+de+Reims+route+touristique+du+champagne" target="_blank" rel="noopener">🧭 Rota do Champagne</a>
+        </div>
+      </article>
     </section>
 
     <!-- ================= VINHOS ================= -->
