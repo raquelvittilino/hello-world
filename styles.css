@@ -161,6 +161,8 @@ main { max-width: 760px; margin: 0 auto; padding: 22px 18px 40px; }
   font-variant-numeric: tabular-nums; margin-right: 3px;
 }
 @media (prefers-color-scheme: dark) { .day__body .t { color: var(--gold-soft); } }
+.day__body .ok { color: #2f8f54; font-weight: 700; font-size: .82rem; margin-right: 3px; }
+@media (prefers-color-scheme: dark) { .day__body .ok { color: #5fcf86; } }
 .day__note {
   margin-top: 12px; font-size: .84rem; color: var(--muted); font-style: italic;
   border-top: 1px dashed var(--line); padding-top: 10px;
