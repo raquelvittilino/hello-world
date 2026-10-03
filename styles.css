@@ -49,36 +49,36 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(120% 140% at 80% -10%, var(--burgundy) 0%, var(--burgundy-deep) 55%, #3a1510 100%);
-  color: #fff5ea;
+  background: radial-gradient(120% 140% at 80% -10%, #fdf1d2 0%, #fae3b1 60%, #f1d49a 100%);
+  color: #5a2a22;
   padding: 46px 22px 40px;
   text-align: center;
 }
 .hero__inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
 .hero__eyebrow {
   text-transform: uppercase; letter-spacing: .28em; font-size: .72rem;
-  color: var(--gold-soft); margin-bottom: 12px;
+  color: #a8542a; margin-bottom: 12px;
 }
 .hero__title {
   font-family: var(--serif); font-weight: 600; line-height: 1.05;
   font-size: clamp(2.3rem, 8vw, 4rem); letter-spacing: .01em;
 }
-.hero__title span { color: var(--gold); font-style: italic; }
-.hero__dates { margin-top: 10px; color: #f0dcc6; font-size: 1rem; }
+.hero__title span { color: #cf5527; font-style: italic; }
+.hero__dates { margin-top: 10px; color: #8a5a44; font-size: 1rem; }
 
 .countdown { display: flex; justify-content: center; gap: 12px; margin-top: 26px; }
 .countdown__cell {
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(250,227,177,.35);
+  background: rgba(125,32,39,.05);
+  border: 1px solid rgba(153,135,49,.45);
   border-radius: 14px; padding: 12px 16px; min-width: 74px;
   backdrop-filter: blur(4px);
 }
-.countdown__cell b { display: block; font-size: 1.7rem; font-family: var(--serif); color: var(--gold-soft); }
-.countdown__cell span { font-size: .68rem; text-transform: uppercase; letter-spacing: .16em; opacity: .8; }
+.countdown__cell b { display: block; font-size: 1.7rem; font-family: var(--serif); color: #7d2027; }
+.countdown__cell span { font-size: .68rem; text-transform: uppercase; letter-spacing: .16em; color: #9a6650; }
 
 .hero__glass {
   position: absolute; right: -60px; bottom: -80px; width: 320px; height: 320px; z-index: 1;
-  background: radial-gradient(circle at 30% 30%, rgba(207,85,39,.4), transparent 60%);
+  background: radial-gradient(circle at 30% 30%, rgba(207,85,39,.2), transparent 60%);
   filter: blur(6px);
 }
 
